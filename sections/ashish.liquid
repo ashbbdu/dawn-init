@@ -1,0 +1,31 @@
+<div{{ section.settings.main-heading }}</div>
+<div>{{ section.setting.title }}</div>
+
+{% schema %}
+{
+  "name": "Blog Testing",
+  "settings": [
+     {
+    "type": "text",
+    "id": "main-heading",
+    "label": "Add Main Heading",
+  },
+     {
+      "type" : "text",
+      "id" : "title",
+      "label" : "Enter the title"
+
+     },
+    {
+       "type" : "text",
+      "id" : "description",
+      "label" : "Enter the Description"
+    },
+    {
+       "type" : "image_picker",
+      "id" : "image",
+      "label" : "Add the image"
+    },
+  ]
+}
+{% endschema %}
